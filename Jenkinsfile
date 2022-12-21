@@ -2,11 +2,12 @@ pipeline {
     agent any
 
     stages {
-    /*    stage('checkout'){
-            steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']],userRemoteConfigs: [[url: 'https://github.com/satyasaranu/terraform_ec2.git']]])
-            }
-        } */
+    //    stage('checkout'){
+      //      steps {
+        //        checkout([$class: 'GitSCM', branches: [[name: '*/main']],userRemoteConfigs: [[url: 'https://github.com/satyasaranu/terraform_ec2.git']]])
+          //  }
+        //} 
+
         stage('init') {
             steps {
                 sh 'terraform init'
